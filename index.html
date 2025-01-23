@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Donation App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Food Donation App</h1>
+    
+    <section>
+      <h2>List Food</h2>
+      <form id="list-food-form">
+        <label for="description">Food Description:</label>
+        <input type="text" id="description" required>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+        
+        <label for="location">Location (Latitude, Longitude):</label>
+        <input type="text" id="location" placeholder="e.g., 40.7306, -73.9352" required>
+        
+        <button type="submit">List Food</button>
+      </form>
+      <div id="list-food-response"></div>
+    </section>
+    
+    <section>
+      <h2>Find Shelters</h2>
+      <form id="find-shelters-form">
+        <label for="food-id">Food ID:</label>
+        <input type="number" id="food-id" required>
+        
+        <button type="submit">Find Shelters</button>
+      </form>
+      <div id="find-shelters-response"></div>
+    </section>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
