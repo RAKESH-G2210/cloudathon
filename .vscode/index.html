@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoulPlate - Food Donation Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>SoulPlate</h1>
+      <p>Bridging Surplus Food to Those in Need</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>List Surplus Food</h2>
+      <form id="foodForm" class="food-form">
+        <label for="description">Food Description:</label>
+        <textarea id="description" placeholder="Describe the food being donated" required></textarea>
+
+        <label for="quantity">Quantity (servings):</label>
+        <input type="number" id="quantity" placeholder="E.g., 50 servings" required>
+
+        <label for="location">Location (Latitude, Longitude):</label>
+        <input type="text" id="location" placeholder="E.g., 40.7128, -74.0060" required>
+
+        <button type="submit" class="submit-btn">List Food</button>
+      </form>
+    </section>
+
+    <section class="shelter-section">
+      <h2>Find Nearby Shelters</h2>
+      <input type="number" id="foodId" placeholder="Enter Food ID" class="shelter-input">
+      <button id="findSheltersButton" class="shelter-btn">Find Shelters</button>
+      <ul id="shelterList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SoulPlate - Connecting food to those who need it most</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

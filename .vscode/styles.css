@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #FFFFFF, #F0F0F0); /* Added gradient for better visual effect */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the page fills the viewport */
+}
+
+header {
+    background: #008000;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: #FFFFFF;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 800px;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #008000; /* Fixed incorrect color code */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.food-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+textarea,
+input {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%; /* Ensure inputs are full-width */
+}
+
+.submit-btn {
+    background-color: #008000;
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3F704D;
+}
+
+.shelter-section {
+    margin-top: 2rem;
+}
+
+.shelter-input {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%; /* Match width of the form inputs */
+    margin-bottom: 1rem;
+}
+
+.shelter-btn {
+    background-color: #008000;
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shelter-btn:hover {
+    background-color: #3F704D;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #3F704D;
+    color: white;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
